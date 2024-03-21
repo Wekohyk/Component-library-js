@@ -44,7 +44,8 @@ const router = createRouter({
       name: 'Dropdown',
       component: () => import('../views/Dropdown.vue')
     }
-  ]
+  ],
+  linkActiveClass: 'active'
 })
 
 export default router
