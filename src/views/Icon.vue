@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <h1></h1>
-  </div>
+  <div>Icon</div>
 </template>
 
 <script setup lang="js"></script>

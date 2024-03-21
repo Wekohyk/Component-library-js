@@ -1,21 +1,48 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Icon from '../views/Icon.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'Icon',
+      component: Icon
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      path: '/button',
+      name: 'Button',
+      component: () => import('../views/Button.vue')
+    },
+    {
+      path: '/card',
+      name: 'Card',
+      component: () => import('../views/Card.vue')
+    },
+    {
+      path: '/dialog',
+      name: 'Dialog',
+      component: () => import('../views/Dialog.vue')
+    },
+    {
+      path: '/collapse',
+      name: 'Collapse',
+      component: () => import('../views/Collapse.vue')
+    },
+    {
+      path: '/pager',
+      name: 'Pager',
+      component: () => import('../views/Pager.vue')
+    },
+    {
+      path: '/tooltip',
+      name: 'Tooltip',
+      component: () => import('../views/Tooltip.vue')
+    },
+    {
+      path: '/dropdown',
+      name: 'Dropdown',
+      component: () => import('../views/Dropdown.vue')
     }
   ]
 })
