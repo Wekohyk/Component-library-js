@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="title">Weko的js组件库</h1>
+    <h1 class="title">{{ $t('weko') }}</h1>
     <nav class="nav">
       <router-link to="/">Icon</router-link>
       <router-link to="/button">Button</router-link>
