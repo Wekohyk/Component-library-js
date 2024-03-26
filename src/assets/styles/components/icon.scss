@@ -1,0 +1,10 @@
+.weko-icon {
+  --weko-icon-color: inherit;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  fill: currentColor;
+  color: var(--weko-icon-color);
+  font-size: inherit;
+}

@@ -1,3 +1,4 @@
 export default {
-  weko: "js component library"
+  weko: 'js component library',
+  normalImport: 'Normal Import'
 }
