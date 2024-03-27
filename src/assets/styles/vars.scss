@@ -1,10 +1,26 @@
 // 负责定义全局样式变量 例如颜色、字体大小等
 
 // theme color
-$color: (
+$colors: (
   primary: #409eff,
   success: #67c23a,
   warning: #e6a23c,
   danger: #f56c6c,
   info: #909399
 );
+
+// 自定义主题颜色
+:root {
+  // 生成主题颜色和不同亮度的颜色
+  @each $val, $color in $colors {
+    // 生成主题颜色
+    --weko-color-#{$val}: #{$color};
+    // 生成不同亮度的颜色
+    @for $i from 1 through 4 {
+      --weko-color-#{$val}-light-#{2 * $i + 1}: #{mix(#fff, $color, ((2 * $i + 1) * 10 * 1%))};
+    }
+    // 下面两种情况不符合上面的规律，所以进行单独处理
+    --weko-color-#{$val}-light-8: #{mix(#fff, $color, 80 * 1%)};
+    --weko-color-#{$val}-dark-2: #{mix(#000, $color, 20 * 1%)};
+  }
+}

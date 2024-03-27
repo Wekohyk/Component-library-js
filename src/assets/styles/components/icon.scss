@@ -10,8 +10,8 @@
 }
 
 @each $var in primary, info, success, warning, danger {
-  // 当你添加上 
+  // 添加类后，会自动根据主题颜色变化
   .weko-icon-#{$var} {
-    --weko-icon-color: map-get($color, $var);
+    --weko-icon-color: var(--weko-color-#{$var});
   }
 }
