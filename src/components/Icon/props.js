@@ -26,5 +26,8 @@ export default {
   // 自定义属性
   type: {
     type: String
+  },
+  color: {
+    type: String
   }
 }

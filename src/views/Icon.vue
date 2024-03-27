@@ -50,6 +50,10 @@
     <Icon icon="shield-halved" size="xl" type="info"></Icon>
     <Icon icon="file" size="xl" type="warning"></Icon>
     <Icon icon="filter" size="xl" type="danger"></Icon>
+    <Icon icon="gear" size="xl" color="#e47412"></Icon>
+    <Icon icon="barcode" size="xl" color="#7ec102"></Icon>
+    <Icon icon="folder" size="xl" color="skyblue"></Icon>
+    <Icon icon="folder-open" size="xl" color="rgba(122, 122, 122, 0.5)"></Icon>
   </div>
 </template>
 
