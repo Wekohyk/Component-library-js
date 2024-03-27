@@ -8,3 +8,10 @@
   color: var(--weko-icon-color);
   font-size: inherit;
 }
+
+@each $var in primary, info, success, warning, danger {
+  // 当你添加上 
+  .weko-icon-#{$var} {
+    --weko-icon-color: map-get($color, $var);
+  }
+}
