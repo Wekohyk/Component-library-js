@@ -8,6 +8,10 @@
 import { computed } from 'vue'
 import propsObj from './props.js'
 import { omit } from 'lodash-es'
+
+defineOptions({
+  name: 'Weko-Icon'
+})
 const props = defineProps(propsObj)
 
 // use omit to remove props that are not needed

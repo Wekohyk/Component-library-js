@@ -1,5 +1,5 @@
 <template>
-  <div>Button</div>
+  <Weko-Button></Weko-Button>
 </template>
 
 <script setup lang="js"></script>
