@@ -23,4 +23,59 @@ $colors: (
     --weko-color-#{$val}-light-8: #{mix(#fff, $color, 80 * 1%)};
     --weko-color-#{$val}-dark-2: #{mix(#000, $color, 20 * 1%)};
   }
+
+  // 通用的颜色
+  --weko-color-white: #fff;
+  --weko-color-black: #000;
+  --weko-bg-color: #ffffff;
+  --weko-bg-color-page: #f2f3f5;
+  --weko-bg-color-overlay: #ffffff;
+  --weko-text-color-primary: #303133;
+  --weko-text-color-regular: #606266;
+  --weko-text-color-secondary: #909399;
+  --weko-text-color-placeholder: #a8abb2;
+  --weko-text-color-disabled: #c0c4cc;
+  --weko-border-color: #dcdfe6;
+  --weko-border-color-light: #e4e7ed;
+  --weko-border-color-lighter: #ebeef5;
+  --weko-border-color-extra-light: #f2f6fc;
+  --weko-border-color-dark: #d4d7de;
+  --weko-border-color-darker: #cdd0d6;
+  --weko-fill-color: #f0f2f5;
+  --weko-fill-color-light: #f5f7fa;
+  --weko-fill-color-lighter: #fafafa;
+  --weko-fill-color-extra-light: #fafcff;
+  --weko-fill-color-dark: #ebedf0;
+  --weko-fill-color-darker: #e6e8eb;
+  --weko-fill-color-blank: #ffffff;
+
+  // 和 border 相关的变量
+  --weko-border-width: 1px;
+  --weko-border-style: solid;
+  --weko-border-color-hover: var(--weko-text-color-disabled);
+  --weko-border: var(--weko-border-width) var(--weko-border-style) var(--weko-border-color);
+  --weko-border-radius-base: 4px;
+  --weko-border-radius-small: 2px;
+  --weko-border-radius-round: 20px;
+  --weko-border-radius-circle: 100%;
+
+  // 和 font 相关的变量
+  --weko-font-size-extra-large: 20px;
+  --weko-font-size-large: 18px;
+  --weko-font-size-medium: 16px;
+  --weko-font-size-base: 14px;
+  --weko-font-size-small: 13px;
+  --weko-font-size-extra-small: 12px;
+  --weko-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
+  --weko-font-weight-primary: 500;
+
+  // 和 disabled 相关的变量
+  --weko-disabled-bg-color: var(--weko-fill-color-light);
+  --weko-disabled-text-color: var(--weko-text-color-placeholder);
+  --weko-disabled-border-color: var(--weko-border-color-light);
+
+  // 和 transition 过渡相关的变量
+  --weko-transition-duration: 0.3s;
+  --weko-transition-duration-fast: 0.2s;
 }

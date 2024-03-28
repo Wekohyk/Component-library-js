@@ -6,6 +6,9 @@ import i18n from './lang/index'
 import App from './App.vue'
 import router from './router'
 
+// 引入样式文件
+import './assets/styles/index.scss'
+
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
 /* import font awesome icon component */
