@@ -1,5 +1,5 @@
 <template>
-  <h2 class="row-title">{{ $t('normalImport') }}</h2>
+  <h2 class="row-title">{{ $t('defaultShow') }}</h2>
   <div class="row">
     <Weko-Button>默认按钮</Weko-Button>
     <Weko-Button type="primary">主要按钮</Weko-Button>
@@ -8,7 +8,7 @@
     <Weko-Button type="warning">警告按钮</Weko-Button>
     <Weko-Button type="danger">危险按钮</Weko-Button>
   </div>
-  <h2 class="row-title">{{ $t('selectSize') }}</h2>
+  <h2 class="row-title">{{ $t('simplicityBtn') }}</h2>
   <div class="row">
     <Weko-Button plain>默认按钮</Weko-Button>
     <Weko-Button type="primary" plain>主要按钮</Weko-Button>
@@ -17,7 +17,7 @@
     <Weko-Button type="warning" plain>警告按钮</Weko-Button>
     <Weko-Button type="danger" plain>危险按钮</Weko-Button>
   </div>
-  <h2 class="row-title">圆角按钮</h2>
+  <h2 class="row-title">{{ $t('radiusBtn') }}</h2>
   <div class="row">
     <Weko-Button round>默认按钮</Weko-Button>
     <Weko-Button type="primary" round>主要按钮</Weko-Button>
@@ -26,7 +26,7 @@
     <Weko-Button type="warning" plain round>警告按钮</Weko-Button>
     <Weko-Button type="danger" plain round>危险按钮</Weko-Button>
   </div>
-  <h2 class="row-title">禁用状态</h2>
+  <h2 class="row-title">{{ $t('disabled') }}</h2>
   <div class="row">
     <Weko-Button disabled>默认按钮</Weko-Button>
     <Weko-Button type="primary" disabled>主要按钮</Weko-Button>
@@ -35,7 +35,7 @@
     <Weko-Button type="warning" disabled>警告按钮</Weko-Button>
     <Weko-Button type="danger" disabled>危险按钮</Weko-Button>
   </div>
-  <h2 class="row-title">等待状态</h2>
+  <h2 class="row-title">{{ $t('await') }}</h2>
   <div class="row">
     <Weko-Button loading>默认按钮</Weko-Button>
     <Weko-Button type="primary" loading>主要按钮</Weko-Button>
@@ -44,7 +44,7 @@
     <Weko-Button type="warning" loading round>警告按钮</Weko-Button>
     <Weko-Button type="danger" loading round>危险按钮</Weko-Button>
   </div>
-  <h2 class="row-title">图标按钮</h2>
+  <h2 class="row-title">{{ $t('iconBtn') }}</h2>
   <div class="row">
     <Weko-Button icon="file">默认按钮</Weko-Button>
     <Weko-Button type="primary" icon="gear">主要按钮</Weko-Button>
@@ -53,7 +53,7 @@
     <Weko-Button type="warning" icon="code" round>警告按钮</Weko-Button>
     <Weko-Button type="danger" icon="cube" round>危险按钮</Weko-Button>
   </div>
-  <h2 class="row-title">不同尺寸的按钮</h2>
+  <h2 class="row-title">{{ $t('differentSizeBtn') }}</h2>
   <div class="row">
     <Weko-Button icon="file" size="small">默认按钮</Weko-Button>
     <Weko-Button type="primary" icon="gear" size="small">主要按钮</Weko-Button>
@@ -62,7 +62,7 @@
     <Weko-Button type="warning" icon="code" plain size="large">警告按钮</Weko-Button>
     <Weko-Button type="danger" icon="cube" plain size="large">危险按钮</Weko-Button>
   </div>
-  <h2 class="row-title">圆形按钮</h2>
+  <h2 class="row-title">{{ $t('roundedBtn') }}</h2>
   <div class="row">
     <Weko-Button type="danger" circle>验</Weko-Button>
     <Weko-Button type="primary" icon="gear" circle></Weko-Button>
@@ -71,7 +71,7 @@
     <Weko-Button type="warning" icon="code" circle disabled></Weko-Button>
     <Weko-Button type="danger" icon="cube" circle disabled></Weko-Button>
   </div>
-  <h2 class="row-title">按钮事件</h2>
+  <h2 class="row-title">{{ $t('btnEvent') }}</h2>
   <div class="row">
     <Weko-Button type="primary" @click="clickHandler" ref="btnRef">主要按钮</Weko-Button>
   </div>

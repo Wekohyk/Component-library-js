@@ -4,5 +4,21 @@ export default {
   selectSize: '设置不同的大小',
   rotationAndFlip: '旋转与翻转',
   animation: '动画效果',
-  custom: '添加自定义属性'
-}
+  custom: '添加自定义属性',
+  defaultShow: '默认展示',
+  simplicityBtn: '朴素按钮',
+  radiusBtn: '圆角按钮',
+  disabled: '禁用状态',
+  await: '等待状态',
+  iconBtn: '图标按钮',
+  differentSizeBtn: '不同尺寸的按钮',
+  roundedBtn: '圆形按钮',
+  btnEvent: '按钮事件',
+  firstGroup: '第一组',
+  secondGroup: '第二组',
+  cardText1: '一只猫3元, 十只猫10元',
+  cardText2: '我是自定义卡片,使用的是插槽',
+  cardMoney: '¥',
+  cardFooter1: '底部左侧',
+  cardFooter2: '底部右侧',
+};

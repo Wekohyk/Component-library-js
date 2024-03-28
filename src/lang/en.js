@@ -4,5 +4,21 @@ export default {
   selectSize: 'Set different sizes',
   rotationAndFlip: 'Rotation and Flip',
   animation: 'Animation Effects',
-  custom: 'Add custom attributes'
-}
+  custom: 'Add custom attributes',
+  defaultShow: 'Default Show',
+  simplicityBtn: 'Simple Button',
+  radiusBtn: 'Radius Button',
+  disabled: 'Disabled State',
+  await: 'Waiting State',
+  iconBtn: 'Icon Button',
+  differentSizeBtn: 'Different Size Button',
+  roundedBtn: 'Rounded Button',
+  btnEvent: 'Button Event',
+  firstGroup: 'First Group',
+  secondGroup: 'Second Group',
+  cardText1: 'One cat is 3, ten cats are 10',
+  cardText2: 'I am a custom card, using a slot',
+  cardMoney: '$',
+  cardFooter1: 'Left Footer',
+  cardFooter2: 'Right Footer',
+};
