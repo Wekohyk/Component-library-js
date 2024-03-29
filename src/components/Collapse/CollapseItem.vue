@@ -6,7 +6,7 @@
       class="weko-collapse-item__header"
       :class="{
         'is-disabled': disabled,
-        // 为后续计算该面板是否处于活动状态
+        // 后续计算该面板是否处于活动状态
         'is-active': isActive,
       }"
       :id="`item-header-${name}`"
