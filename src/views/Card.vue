@@ -4,10 +4,10 @@
     <!-- 第一张卡片 -->
     <Weko-Card
       imgSrc="/images/card1.webp"
-      summary="这是一个风景照片"
+      :summary="$t('cardText3')"
     ></Weko-Card>
     <!-- 第二张卡片 -->
-    <Weko-Card imgSrc="/images/card2.webp" summary="这是一张猫狗钓鱼的照片">
+    <Weko-Card imgSrc="/images/card2.webp" :summary="$t('cardText4')">
       <!-- 插槽内部的内容样式由用户自己决定 -->
       <template #footer>
         <div class="footer">

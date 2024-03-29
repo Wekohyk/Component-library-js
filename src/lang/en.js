@@ -18,6 +18,8 @@ export default {
   secondGroup: 'Second Group',
   cardText1: 'One cat is 3, ten cats are 10',
   cardText2: 'I am a custom card, using a slot',
+  cardText3: 'This is a landscape photo',
+  cardText4: 'This is a photo of a cat and dog fishing',
   cardMoney: '$',
   cardFooter1: 'Left Footer',
   cardFooter2: 'Right Footer',

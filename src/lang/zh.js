@@ -18,6 +18,8 @@ export default {
   secondGroup: '第二组',
   cardText1: '一只猫3元, 十只猫10元',
   cardText2: '我是自定义卡片,使用的是插槽',
+  cardText3: '这是一个风景照片',
+  cardText4: '这是一张猫狗钓鱼的照片',
   cardMoney: '¥',
   cardFooter1: '底部左侧',
   cardFooter2: '底部右侧',
