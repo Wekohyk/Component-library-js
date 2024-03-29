@@ -24,6 +24,7 @@ import Button from './components/Button/Button.vue';
 import Card from './components/Card/Card.vue';
 import Dialog from './components/Dialog/Dialog.vue';
 import Pager from './components/Pager/Pager.vue';
+import Collapse from './components/Collapse/Collapse.vue';
 
 const app = createApp(App);
 
@@ -34,6 +35,7 @@ app.component('Weko-Button', Button);
 app.component('Weko-Card', Card);
 app.component('Weko-Dialog', Dialog);
 app.component('Weko-Pager', Pager);
+app.component('Weko-Collapse', Collapse);
 
 app.use(createPinia());
 app.use(router);

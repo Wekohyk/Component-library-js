@@ -1,0 +1,57 @@
+.weko-collapse {
+  --weko-collapse-border-color: var(--weko-border-color-light);
+  --weko-collapse-header-height: 48px;
+  --weko-collapse-header-bg-color: var(--weko-fill-color-blank);
+  --weko-collapse-header-text-color: var(--weko-text-color-primary);
+  --weko-collapse-header-font-size: 13px;
+  --weko-collapse-content-bg-color: var(--weko-fill-color-blank);
+  --weko-collapse-content-font-size: 13px;
+  --weko-collapse-content-text-color: var(--weko-text-color-primary);
+  --weko-collapse-disabled-text-color: var(--weko-disabled-text-color);
+  --weko-collapse-disabled-border-color: var(--weko-border-color-lighter);
+  border-top: 1px solid var(--weko-collapse-border-color);
+  width: 100%;
+}
+.weko-collapse-item__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--weko-collapse-header-height);
+  line-height: var(--weko-collapse-header-height);
+  background-color: var(--weko-collapse-header-bg-color);
+  color: var(--weko-collapse-header-text-color);
+  cursor: pointer;
+  font-size: var(--weko-collapse-header-font-size);
+  font-weight: 500;
+  transition: border-bottom-color var(--weko-transition-duration);
+  outline: none;
+  border-bottom: 1px solid var(--weko-collapse-border-color);
+  &.is-disabled {
+    color: var(--weko-collapse-disabled-text-color);
+    cursor: not-allowed;
+    background-image: none;
+  }
+  &.is-active {
+    border-bottom-color: transparent;
+    .header-angle {
+      transform: rotate(90deg);
+    }
+  }
+  .header-angle {
+    transition: transform var(--weko-transition-duration);
+  }
+}
+.weko-collapse-item__content {
+  will-change: height;
+  background-color: var(--weko-collapse-content-bg-color);
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: var(--weko-collapse-content-font-size);
+  color: var(--weko-collapse-content-text-color);
+  border-bottom: 1px solid var(--weko-collapse-border-color);
+  padding-bottom: 25px;
+}
+.slide-enter-active,
+.slide-leave-active {
+  transition: height var(--weko-transition-duration);
+}
