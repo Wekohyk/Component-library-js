@@ -21,4 +21,13 @@ export default {
   cardMoney: '¥',
   cardFooter1: '底部左侧',
   cardFooter2: '底部右侧',
+  tips: '提示',
+  dialogExample: '对话框示例',
+  firstDialog: '第一个对话框',
+  secondDialog: '第二个对话框',
+  thirdDialog: '第三个对话框',
+  dialogText: '这是一个基本的对话框',
+  dialogBasicName: '这是一个自定义名称对话框',
+  off: '关闭',
+  sure: '确定',
 };

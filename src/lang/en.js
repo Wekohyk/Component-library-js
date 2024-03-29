@@ -21,4 +21,13 @@ export default {
   cardMoney: '$',
   cardFooter1: 'Left Footer',
   cardFooter2: 'Right Footer',
+  tips: 'Tips',
+  dialogExample: 'Dialog Example',
+  firstDialog: 'First Dialog',
+  secondDialog: 'Second Dialog',
+  thirdDialog: 'Third Dialog',
+  dialogText: 'This is a basic dialog',
+  dialogBasicName: 'This is a custom name dialog box',
+  off: 'Off',
+  sure: 'Sure',
 };
