@@ -38,4 +38,13 @@ export default {
   dialogBasicName: 'This is a custom name dialog box',
   off: 'Off',
   sure: 'Sure',
+  home: 'Home',
+  trailing: 'Trailing',
+  pagerText1:
+    'The total number of pages total is greater than the maximum number of pages pager-count, so it cannot be displayed completely',
+  pagerText2:
+    'The total number of pages total is less than or equal to the maximum number of pages pager-count, and can be displayed completely',
+  pagerText3: 'The maximum number of pages pager-count can be adjusted',
+  pagerText4: 'Adjust the theme color',
+  pagerText5: 'Adjust size',
 };

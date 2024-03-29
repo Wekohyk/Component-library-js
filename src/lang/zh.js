@@ -38,4 +38,11 @@ export default {
   dialogBasicName: '这是一个自定义名称对话框',
   off: '关闭',
   sure: '确定',
+  home: '首页',
+  trailing: '尾页',
+  pagerText1: '总页数 total 大于页码最大显示数 pager-count, 此时无法全部显示',
+  pagerText2: '总页码数 total 小于等于页码最大显示数 pager-count, 可以全部显示',
+  pagerText3: '页码最大显示数 pager-count 是可以调整的',
+  pagerText4: '调整主题颜色',
+  pagerText5: '调整大小',
 };

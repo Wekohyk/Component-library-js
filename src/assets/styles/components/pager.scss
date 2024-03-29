@@ -1,0 +1,56 @@
+.weko-pager {
+  --weko-pager-theme-color: var(--weko-color-primary);
+  --weko-pager-size: 34px;
+  --weko-pager-padding: 0 12px;
+  --weko-pager-font-size: var(--weko-font-size-base);
+}
+.weko-pager {
+  text-align: center;
+  a {
+    border: 1px solid #e1e2e3;
+    background-color: #f0f2f5;
+    color: #303133;
+    height: var(--weko-pager-size);
+    display: inline-block;
+    line-height: var(--weko-pager-size);
+    border-radius: 2px;
+    padding: var(--weko-pager-padding);
+    margin: 8px;
+    font-size: var(--weko-pager-font-size);
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+      color: var(--weko-pager-theme-color);
+    }
+    /* 当前页会挂上 active 类 */
+    &.active {
+      //   border: none;
+      color: #fff;
+      background-color: var(--weko-pager-theme-color);
+      border-color: var(--weko-pager-theme-color);
+    }
+    /* a 标签禁用的时候会挂上 disabled 类 */
+    &.disabled {
+      color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+}
+
+@each $val in primary, success, warning, info, danger {
+  .weko-pager--#{$val} {
+    --weko-pager-theme-color: var(--weko-color-#{$val});
+  }
+}
+
+.weko-pager--small {
+  --weko-pager-size: 25px;
+  --weko-pager-padding: 0 8px;
+  --weko-pager-font-size: var(--weko-font-size-small);
+}
+
+.weko-pager--large {
+  --weko-pager-size: 44px;
+  --weko-pager-padding: 0 16px;
+  --weko-pager-font-size: var(--weko-font-size-large);
+}
