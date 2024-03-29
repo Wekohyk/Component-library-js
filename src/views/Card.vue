@@ -19,6 +19,7 @@
   </div>
   <div class="row-title">{{ $t('secondGroup') }}</div>
   <div class="row">
+    <!-- 第三张卡片 -->
     <Weko-Card imgSrc="/images/card3.webp" :width="368" :imgHeight="90">
       <div>{{ $t('cardText2') }}</div>
       <!-- 插槽内部的内容样式由用户自己决定 -->
