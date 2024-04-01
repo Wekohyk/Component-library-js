@@ -45,4 +45,7 @@ export default {
   pagerText3: '页码最大显示数 pager-count 是可以调整的',
   pagerText4: '调整主题颜色',
   pagerText5: '调整大小',
+  foldPanel: '折叠面板',
+  accordionMode: '手风琴模式',
+  customTitle: '自定义标题',
 };

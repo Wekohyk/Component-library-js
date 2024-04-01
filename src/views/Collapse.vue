@@ -1,5 +1,5 @@
 <template>
-  <h2 class="row-title">折叠面板</h2>
+  <h2 class="row-title">{{ $t('foldPanel') }}</h2>
   <div class="row">
     <Weko-Collapse v-model="openedValue" @change="changeHandle">
       <Weko-CollapseItem name="a" title="home">
@@ -16,7 +16,7 @@
       </Weko-CollapseItem>
     </Weko-Collapse>
   </div>
-  <h2 class="row-title">手风琴模式</h2>
+  <h2 class="row-title">{{ $t('accordionMode') }}</h2>
   <div class="row">
     <Weko-Collapse v-model="openedValue2" @change="changeHandle" accordion>
       <Weko-CollapseItem name="a" title="home">
@@ -33,7 +33,7 @@
       </Weko-CollapseItem>
     </Weko-Collapse>
   </div>
-  <h2 class="row-title">自定义标题</h2>
+  <h2 class="row-title">{{ $t('customTitle') }}</h2>
   <div class="row">
     <Weko-Collapse v-model="openedValue3" accordion>
       <Weko-CollapseItem name="Consistency" title="Consistency">

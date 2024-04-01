@@ -47,4 +47,7 @@ export default {
   pagerText3: 'The maximum number of pages pager-count can be adjusted',
   pagerText4: 'Adjust the theme color',
   pagerText5: 'Adjust size',
+  foldPanel: 'Folding Panel',
+  accordionMode: 'Accordion Mode',
+  customTitle: 'CustomTitle',
 };
