@@ -1,7 +1,6 @@
 import './assets/styles/index.scss';
 
 import { createApp } from 'vue';
-import { createPinia } from 'pinia';
 import i18n from './lang/index';
 import App from './App.vue';
 import router from './router';
@@ -26,6 +25,7 @@ import Dialog from './components/Dialog/Dialog.vue';
 import Pager from './components/Pager/Pager.vue';
 import Collapse from './components/Collapse/Collapse.vue';
 import CollapseItem from './components/Collapse/CollapseItem.vue';
+import DropDown from './components/DropDown/DropDown.vue';
 
 const app = createApp(App);
 
@@ -38,8 +38,8 @@ app.component('Weko-Dialog', Dialog);
 app.component('Weko-Pager', Pager);
 app.component('Weko-Collapse', Collapse);
 app.component('Weko-CollapseItem', CollapseItem);
+app.component('Weko-DropDown', DropDown);
 
-app.use(createPinia());
 app.use(router);
 app.use(i18n);
 

@@ -1,11 +1,35 @@
 {
   "name": "component-library-js",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "A component library for Vue 3",
   "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue3",
+    "component-library"
+  ],
+  "files": [
+    "dist"
+  ],
+  "module": "dist/es/weko-js-components.js",
+  "main": "dist/umd/weko-js-components.umd.cjs",
+  "exports": {
+    ".": {
+      "import": "./dist/es/weko-js-components.js",
+      "require": "./dist/umd/weko-js-components.umd.cjs"
+    },
+    "./style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/umd/style.css"
+    }
+  },
   "scripts": {
     "dev": "vite --host --open",
-    "build": "vite build",
+    "build": "yarn build-es && yarn build-umd && yarn move-style",
+    "build-es": "vite build --config vite.es.config.js",
+    "build-umd": "vite build --config vite.umd.config.js",
+    "move-style": "move-file dist/es/style.css dist/style.css",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
@@ -14,11 +38,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/vue-fontawesome": "^3.0.6",
-    "lodash-es": "^4.17.21",
-    "pinia": "^2.1.7",
-    "vue": "^3.4.21",
-    "vue-i18n": "^9.10.2",
-    "vue-router": "^4.3.0"
+    "lodash-es": "^4.17.21"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.3.3",
@@ -29,6 +49,12 @@
     "eslint-plugin-vue": "^9.17.0",
     "prettier": "^3.0.3",
     "sass": "^1.72.0",
-    "vite": "^5.1.6"
+    "vite": "^5.1.6",
+    "vue": "^3.4.21",
+    "vue-i18n": "^9.10.2",
+    "vue-router": "^4.3.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.21"
   }
 }
