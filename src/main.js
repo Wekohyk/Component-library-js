@@ -26,6 +26,7 @@ import Pager from './components/Pager/Pager.vue';
 import Collapse from './components/Collapse/Collapse.vue';
 import CollapseItem from './components/Collapse/CollapseItem.vue';
 import DropDown from './components/DropDown/DropDown.vue';
+import Tooltip from './components/Tooltip/Tooltip.vue';
 
 const app = createApp(App);
 
@@ -39,6 +40,7 @@ app.component('Weko-Pager', Pager);
 app.component('Weko-Collapse', Collapse);
 app.component('Weko-CollapseItem', CollapseItem);
 app.component('Weko-DropDown', DropDown);
+app.component('Weko-Tooltip', Tooltip);
 
 app.use(router);
 app.use(i18n);
