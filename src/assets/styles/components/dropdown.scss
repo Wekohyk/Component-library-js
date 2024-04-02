@@ -1,4 +1,4 @@
-.weko-dropdown .weko-dropdown__menu {
+.weko-dropdown .weko-dropdown_menu {
   --weko-dropdown-menuItem-hover-fill: var(--weko-color-primary-light-9);
   --weko-dropdown-menuItem-hover-color: var(--weko-color-primary);
   --weko-dropdown-menuItem-disabled-color: var(--weko-border-color-lighter);
@@ -10,11 +10,11 @@
     --weko-popover-padding: 5px 0;
   }
 }
-.weko-dropdown__menu {
+.weko-dropdown_menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  .weko-dropdown__item {
+  .weko-dropdown_item {
     display: flex;
     align-items: center;
     white-space: nowrap;
