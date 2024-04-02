@@ -59,6 +59,7 @@ watch(
     if (newValue) {
       if (triggerRef.value && popperRef.value) {
         // 创建 popper 实例
+        // createPopper 方法的返回值是一个对象, 包含了一些方法, 用于控制 popper 实例
         popperInstance.value = createPopper(
           triggerRef.value,
           popperRef.value,
@@ -66,6 +67,7 @@ watch(
           popperOptions.value,
         );
       } else {
+        // 销毁之前的实例
         popperInstance.value?.destroy();
       }
     }
