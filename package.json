@@ -26,7 +26,7 @@
   },
   "scripts": {
     "dev": "vite --host --open",
-    "build": "vite build",
+    "build": "yarn build-es && yarn build-umd && yarn move-style",
     "build-es": "vite build --config vite.es.config.js",
     "build-umd": "vite build --config vite.umd.config.js",
     "move-style": "move-file dist/es/style.css dist/style.css",
