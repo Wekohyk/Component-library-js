@@ -10,7 +10,7 @@ import propsObj from './props.js'
 import { omit } from 'lodash-es'
 
 defineOptions({
-  name: 'Weko-Icon'
+  name: 'WekoIcon'
 })
 const props = defineProps(propsObj)
 

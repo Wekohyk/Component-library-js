@@ -24,7 +24,7 @@
 <script setup lang="js">
 import propsObj from './props';
 defineOptions({
-  name: 'Weko-Card',
+  name: 'WekoCard',
 });
 defineProps(propsObj);
 </script>

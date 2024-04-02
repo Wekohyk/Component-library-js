@@ -37,7 +37,7 @@ import { ref } from 'vue';
 import propsObj from './props';
 import RenderVNode from '../common/RenderVNode';
 defineOptions({
-  name: 'Weko-Dropdown',
+  name: 'WekoDropdown',
 });
 const tooltipRef = ref(null);
 const emit = defineEmits(['select', 'visible-change']);

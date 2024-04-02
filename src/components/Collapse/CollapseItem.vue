@@ -31,7 +31,7 @@
 import { inject, computed } from 'vue';
 import { collapseContextKey, collapseItemProps } from './props';
 defineOptions({
-  name: 'Weko-CollapseItem',
+  name: 'WekoCollapseItem',
 });
 const props = defineProps(collapseItemProps);
 // 依赖注入方式拿到数据和方法

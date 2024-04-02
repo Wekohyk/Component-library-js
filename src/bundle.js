@@ -18,7 +18,7 @@ import Dialog from './components/Dialog';
 import Pager from './components/Pager';
 import Collapse from './components/Collapse';
 import CollapseItem from './components/Collapse';
-import DropDown from './components/DropDown';
+import Dropdown from './components/Dropdown';
 
 // 提供一个 install 方法
 const componentsArr = [
@@ -29,7 +29,7 @@ const componentsArr = [
   Pager,
   Collapse,
   CollapseItem,
-  DropDown,
+  Dropdown,
 ];
 
 // 对外提供的 install 方法
@@ -55,5 +55,5 @@ export {
   Pager,
   Collapse,
   CollapseItem,
-  DropDown,
+  Dropdown,
 };

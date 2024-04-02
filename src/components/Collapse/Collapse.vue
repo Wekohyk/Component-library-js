@@ -8,7 +8,7 @@
 import { collapseProps, collapseContextKey } from './props';
 import { ref, provide } from 'vue';
 defineOptions({
-  name: 'Weko-Collapse',
+  name: 'WekoCollapse',
 });
 
 const props = defineProps(collapseProps);

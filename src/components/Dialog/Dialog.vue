@@ -32,7 +32,7 @@
 <script setup lang="js">
 import propsObj from './props';
 defineOptions({
-  name: 'Weko-Dialog',
+  name: 'WekoDialog',
 });
 defineProps(propsObj);
 

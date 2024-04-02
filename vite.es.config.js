@@ -16,7 +16,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  publicDir: 'emtpty',
+  publicDir: 'empty',
   build: {
     outDir: 'dist/es',
     lib: {

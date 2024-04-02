@@ -68,7 +68,7 @@ import propsObj from './props';
 import { computed } from 'vue';
 
 defineOptions({
-  name: 'Weko-Pager',
+  name: 'WekoPager',
 });
 const props = defineProps(propsObj);
 

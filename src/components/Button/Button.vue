@@ -8,7 +8,7 @@
       'is-plain': plain,
       'is-round': round,
       'is-circle': circle,
-      'is-disabled': disabled || loading
+      'is-disabled': disabled || loading,
     }"
     :disabled="disabled || loading"
   >
@@ -21,20 +21,20 @@
 </template>
 
 <script setup lang="js">
-import { ref } from 'vue'
-import propsObj from './props'
+import { ref } from 'vue';
+import propsObj from './props';
 
 defineOptions({
-  name: 'Weko-Button'
-})
-defineProps(propsObj)
+  name: 'WekoButton',
+});
+defineProps(propsObj);
 
 // 可以通过wekoButton获取到button元素
-const _ref = ref(null)
+const _ref = ref(null);
 
 defineExpose({
-  ref: _ref
-})
+  ref: _ref,
+});
 </script>
 
 <style scoped lang="scss"></style>

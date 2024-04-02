@@ -20,7 +20,7 @@ import { createPopper } from '@popperjs/core';
 import { debounce } from 'lodash-es';
 
 defineOptions({
-  name: 'Weko-Tooltip',
+  name: 'WekoTooltip',
 });
 const props = defineProps(propsObj);
 const emit = defineEmits(['visible-change']);
