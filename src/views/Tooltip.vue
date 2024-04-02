@@ -1,5 +1,5 @@
 <template>
-  <h2 class="row-title">不同方向</h2>
+  <h2 class="row-title">{{ $t('differentDirections') }}</h2>
   <div class="row">
     <div class="row">
       <Weko-Tooltip
@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <h2 class="row-title">切换触发模式</h2>
+  <h2 class="row-title">{{ $t('switchTrigger') }}</h2>
   <div class="row">
     <div class="row">
       <Weko-Tooltip content="this is a test" placement="top" trigger="click">
@@ -39,7 +39,7 @@
     </div>
   </div>
 
-  <h2 class="row title">手动触发模式</h2>
+  <h2 class="row title">{{ $t('手动触发模式') }}</h2>
   <div class="row">
     <Weko-Tooltip
       content="this is a test"
@@ -51,11 +51,11 @@
     </Weko-Tooltip>
   </div>
   <div class="row">
-    <Weko-Button @click="openHandler">打开提示框</Weko-Button>
-    <Weko-Button @click="closeHandler">关闭提示框</Weko-Button>
+    <Weko-Button @click="openHandler">{{ $t('openPrompt') }}</Weko-Button>
+    <Weko-Button @click="closeHandler">{{ $t('closePrompt') }}</Weko-Button>
   </div>
 
-  <h2 class="row-title">延时触发</h2>
+  <h2 class="row-title">{{ $t('delayedTrigger') }}</h2>
   <div class="row">
     <Weko-Tooltip
       content="this is a test"
