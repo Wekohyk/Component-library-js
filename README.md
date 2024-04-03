@@ -7,6 +7,19 @@
 $t('xxxxxx');
 ```
 
+## 组件库使用方法
+
+项目入口文件(main.js)中
+
+```js
+import componentLibraryJs from 'component-library-js';
+import 'component-library-js/style.css';
+
+const app = createApp(App);
+app.use(componentLibraryJs);
+app.mount('#app');
+```
+
 ## Icon组件的使用
 
 为了提升用户体验感，简洁用户写法，所以对元素 属性中的代码进行了省略，**用户只需要写 fa- 后面的内容**。

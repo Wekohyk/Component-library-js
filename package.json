@@ -1,6 +1,6 @@
 {
   "name": "component-library-js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A component library for Vue 3",
   "type": "module",
   "license": "MIT",
