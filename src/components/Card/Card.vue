@@ -4,7 +4,7 @@
     <!-- 卡片图片 -->
     <div
       class="weko-card-img"
-      :style="imgHeight ? { imgHeight: imgHeight + 'px' } : {}"
+      :style="imgHeight ? { height: imgHeight + 'px' } : {}"
     >
       <img :src="imgSrc" alt="img" />
     </div>
