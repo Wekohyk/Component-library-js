@@ -31,6 +31,8 @@
 </template>
 <script setup lang="js">
 import propsObj from './props';
+import { onMounted, onUnmounted } from 'vue';
+
 defineOptions({
   name: 'WekoDialog',
 });
@@ -45,6 +47,19 @@ const clickHandle = event => {
     emit('close');
   }
 };
+
+// 添加esc键关闭弹窗
+onMounted(() => {
+  const closeDialog = e => {
+    if (e.key === 'Escape') {
+      emit('close');
+    }
+  };
+  window.addEventListener('keydown', closeDialog);
+  onUnmounted(() => {
+    window.removeEventListener('keydown', closeDialog);
+  });
+});
 </script>
 
 <style scoped lang="scss"></style>
